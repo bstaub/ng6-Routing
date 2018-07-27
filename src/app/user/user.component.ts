@@ -10,16 +10,20 @@ import {Subscription} from 'rxjs';
         <p>{{ id }}</p>
         <button class="btn btn-primary" (click)="onNavigage()">Zur Startseite</button>
         <hr>
-        <a [routerLink]="['detail']">Detail</a> | 
-        <a [routerLink]="['edit']">Edit</a>
+        <a [routerLink]="['detail']" routerLinkActive="active">Detail</a> | 
+        <a [routerLink]="['edit']" routerLinkActive="active">Edit</a>
         <hr>
         <router-outlet></router-outlet>
       </div>
       
       
     </div>
-
-  `
+  `,
+  styles: [`
+    .active{
+      color: green;
+    }
+  `]
 })
 export class UserComponent implements OnInit, OnDestroy {
   private subscription: Subscription;

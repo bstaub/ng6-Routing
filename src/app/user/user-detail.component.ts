@@ -7,7 +7,6 @@ import {Component} from '@angular/core';
         <p>Details zu deinem Account</p>
       </div>
     </div>
-
   `
 })
 export class UserDetailComponent {
