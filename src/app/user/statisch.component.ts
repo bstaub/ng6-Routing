@@ -5,13 +5,13 @@ import {Router} from '@angular/router';
   template: `
     <div class="row">
       <div class="col-xs-12">
-        <h2>Dein Account</h2>
+        <h2>User Statisch Seite</h2>
         <button class="btn btn-primary" (click)="onNavigage()">Zur Startseite</button>
       </div>
     </div>
   `
 })
-export class UserComponent {
+export class StatischComponent {
 
   constructor(private router: Router) {}
 

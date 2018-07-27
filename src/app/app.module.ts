@@ -7,6 +7,8 @@ import {UserDetailComponent} from './user/user-detail.component';
 import {UserEditComponent} from './user/user-edit.component';
 import {MyRouting} from './app.routing';
 import {HomeComponent} from './home.component';
+import {HeaderComponent} from './header.component';
+import {StatischComponent} from './user/statisch.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import {HomeComponent} from './home.component';
     UserComponent,
     UserDetailComponent,
     UserEditComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
+    StatischComponent
   ],
   imports: [
     BrowserModule,

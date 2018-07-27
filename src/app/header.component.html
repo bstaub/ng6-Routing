@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-xs-12">
+    <a [routerLink]="['/']">Home</a> |
+    <a [routerLink]="['/user/statisch']">Statisch</a> |
+    <a [routerLink]="['/user', input.value ]">User</a>
+    <hr>
+    <div class="row">
+      <div class="col-xs-12">
+        <input type="text" #input (input)="0">
+      </div>
+    </div>
+  </div>
+</div>
