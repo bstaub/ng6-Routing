@@ -22,7 +22,7 @@ import {StatischComponent} from './user/statisch.component';
   ],
   imports: [
     BrowserModule,
-    MyRouting
+    MyRouting,
   ],
   providers: [],
   bootstrap: [AppComponent]

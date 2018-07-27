@@ -9,8 +9,16 @@ import {Subscription} from 'rxjs';
         <h2>Dein Account</h2>
         <p>{{ id }}</p>
         <button class="btn btn-primary" (click)="onNavigage()">Zur Startseite</button>
+        <hr>
+        <a [routerLink]="['detail']">Detail</a> | 
+        <a [routerLink]="['edit']">Edit</a>
+        <hr>
+        <router-outlet></router-outlet>
       </div>
+      
+      
     </div>
+
   `
 })
 export class UserComponent implements OnInit, OnDestroy {
@@ -21,7 +29,7 @@ export class UserComponent implements OnInit, OnDestroy {
   }
 
   onNavigage() {
-    this.router.navigate(['/']);
+    this.router.navigate(['/'], {queryParams: {'token': 100}, fragment: 'anchor1'});
   }
 
   ngOnInit() {
