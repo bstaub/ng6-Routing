@@ -9,6 +9,8 @@ import {MyRouting} from './app.routing';
 import {HomeComponent} from './home.component';
 import {HeaderComponent} from './header.component';
 import {StatischComponent} from './user/statisch.component';
+import {UserDetailGuard} from './user/user-detail.guard';
+import {UserEditGuard} from './user/user-edit.guard';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,7 @@ import {StatischComponent} from './user/statisch.component';
     BrowserModule,
     MyRouting,
   ],
-  providers: [],
+  providers: [UserDetailGuard, UserEditGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule {
